@@ -25,4 +25,4 @@ fields needed: username, password
 List users:
 [GET] http://localhost:3000/users
 
-To be able to list users you will need to provide authorization key in headers. Authorization key is given after succesfull login.
+To be able to list users you will need token
