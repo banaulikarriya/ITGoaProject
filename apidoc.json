@@ -1,0 +1,8 @@
+{
+  "name": "ITGoaProject",
+  "version": "0.1.0",
+  "description": "Backend for ITGoaProject project",
+  "title": "ITGoaProject",
+  "url" : "{{server_url}}",
+  "sampleUrl": "http://localhost:3000"
+}

@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "generate-docs": "apidoc -i apidocs/ -o docs/"
   },
   "dependencies": {
     "bcrypt": "^1.0.2",
