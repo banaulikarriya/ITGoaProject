@@ -9,7 +9,7 @@ const User = require('../models/User');
 async function signUp(req, res) {
   let data = req.body;
   try {
-    const user_new = await User.create(data);
+    let user_new = await User.create(data);
     return res.status(201).json({
       data: user_new,
       message: "Account created!",
