@@ -124,5 +124,80 @@ define({ "api": [
         "url": "http://localhost:3000/signup"
       }
     ]
+  },
+  {
+    "type": "get",
+    "url": "/getPost?token={{token}}",
+    "title": "",
+    "group": "Post",
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "   HTTP/1.1 200 OK\n{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"title\": \"add post\",\n            \"tags\": \"pod d jskdj\",\n            \"status\": true,\n            \"createdAt\": \"2019-02-06T10:22:04.000Z\",\n            \"updatedAt\": \"2019-02-06T10:22:04.000Z\"\n        }\n    ],\n    \"message\": \"Get all posts!\",\n    \"status\": \"OK\",\n    \"code\": 200\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "Register error",
+          "content": "HTTP/1.1 400 Internal Server Error",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "apidocs/post.js",
+    "groupTitle": "Post",
+    "name": "GetGetpostTokenToken",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:3000/getPost?token={{token}}"
+      }
+    ]
+  },
+  {
+    "type": "post",
+    "url": "/addPost?token={{token}}",
+    "title": "",
+    "group": "Post",
+    "parameter": {
+      "examples": [
+        {
+          "title": "Input",
+          "content": "{\n     \"title\":\"add post\",\n     \"tags\":\"pod d jskdj\" \n}",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "   HTTP/1.1 200 OK\n{\n    \"data\": {\n        \"status\": true,\n        \"id\": 1,\n        \"title\": \"add post\",\n        \"tags\": \"pod d jskdj\",\n        \"updatedAt\": \"2019-02-06T10:22:04.000Z\",\n        \"createdAt\": \"2019-02-06T10:22:04.000Z\"\n    },\n    \"message\": \"Post created!\",\n    \"status\": \"OK\",\n    \"code\": 200\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "Register error",
+          "content": "HTTP/1.1 400 Internal Server Error",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "apidocs/post.js",
+    "groupTitle": "Post",
+    "name": "PostAddpostTokenToken",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:3000/addPost?token={{token}}"
+      }
+    ]
   }
 ] });
