@@ -59,7 +59,8 @@ async function authenticateUser(req, res) {
             res.json({
               status: 'OK',
               code: 200,
-              token: token
+              token: token,
+              data : user
             });
           } else {
             res.status(404).json({

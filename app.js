@@ -10,6 +10,7 @@ const passport = require('passport');
 const jwt = require('jsonwebtoken');
 const hookJWTStrategy = require('./passportStrategy');
 const db = require('./database');
+const multer = require('multer');
 
 const User = require('./models/User.js');
 
@@ -44,8 +45,10 @@ app.use(passport.initialize());
 // Hook the passport JWT strategy.
 hookJWTStrategy(passport);
 
-app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(multer().any());
+
 
 app.use(cookieParser());
 
