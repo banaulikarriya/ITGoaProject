@@ -50,13 +50,44 @@
  * @apiSuccessExample {json} Success-Response:
  *    HTTP/1.1 200 OK
  * {
- * "data": {
-        "id": 4,
-        "username": "priya",
-        "email": "priya@gmail.com",
-        "updatedAt": "2019-02-03T09:42:01.000Z",
-        "createdAt": "2019-02-03T09:42:01.000Z"
+        "data": {
+        "id": 1,
+        "name": "Priya Banaulikar",
+        "username": "priyab",
+        "email": "priyab@gmail.com",
+        "password": "$2b$10$OhEY47IATUFrUnglqhSygejbNQEjSE1ykrPMHZg65g.5gRlpOsJwi",
+        "contact": 44,
+        "category": 2,
+        "description": "loind",
+        "tags": "d",
+        "location": "ds",
+        "address": "dd",
+        "city": "S",
+        "taluka": "D",
+        "village": "d",
+        "pincode": 45646,
+        "image": "sad",
+        "coverPic": "d",
+        "createdAt": "2019-02-22T17:42:14.000Z",
+        "updatedAt": "2019-02-22T17:49:38.000Z"
     },
+    "message": "Get Profile",
+    "status": "OK",
+    "code": 200
+ * }
+ * @apiErrorExample {json} Register error
+ *    HTTP/1.1 400 Internal Server Error
+ */
+
+  /**
+ * @api {post} /profile/1?token={{token}} Edit Profile
+ * @apiGroup Login
+ * @apiSuccessExample {json} Success-Response:
+ *    HTTP/1.1 200 OK
+ * {
+           "data": [
+        1
+    ],
     "message": "Get Profile",
     "status": "OK",
     "code": 200

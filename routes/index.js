@@ -11,6 +11,7 @@ const auth = require('../authorization');
 
 // user routes
 router.get('/profile/:id', auth.authorizeUser, userController.getUserById);
+router.put('/profile/:id', auth.authorizeUser, userController.editUser);
 router.get('/users',auth.authorizeUser,userController.getAllUsers);
 router.post('/login', authController.authenticateUser);
 router.post('/signup', authController.signUp);

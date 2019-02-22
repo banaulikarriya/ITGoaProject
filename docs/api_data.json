@@ -61,6 +61,39 @@
   },
   {
     "type": "post",
+    "url": "/profile/1?token={{token}}",
+    "title": "Edit Profile",
+    "group": "Login",
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "   HTTP/1.1 200 OK\n{\n           \"data\": [\n        1\n    ],\n    \"message\": \"Get Profile\",\n    \"status\": \"OK\",\n    \"code\": 200\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "Register error",
+          "content": "HTTP/1.1 400 Internal Server Error",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "apidocs/login.js",
+    "groupTitle": "Login",
+    "name": "PostProfile1TokenToken",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:3000/profile/1?token={{token}}"
+      }
+    ]
+  },
+  {
+    "type": "post",
     "url": "/profile/:id?token{{token}}",
     "title": "Profile",
     "group": "Login",
@@ -68,7 +101,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "   HTTP/1.1 200 OK\n{\n\"data\": {\n        \"id\": 4,\n        \"username\": \"priya\",\n        \"email\": \"priya@gmail.com\",\n        \"updatedAt\": \"2019-02-03T09:42:01.000Z\",\n        \"createdAt\": \"2019-02-03T09:42:01.000Z\"\n    },\n    \"message\": \"Get Profile\",\n    \"status\": \"OK\",\n    \"code\": 200\n}",
+          "content": "   HTTP/1.1 200 OK\n{\n        \"data\": {\n        \"id\": 1,\n        \"name\": \"Priya Banaulikar\",\n        \"username\": \"priyab\",\n        \"email\": \"priyab@gmail.com\",\n        \"password\": \"$2b$10$OhEY47IATUFrUnglqhSygejbNQEjSE1ykrPMHZg65g.5gRlpOsJwi\",\n        \"contact\": 44,\n        \"category\": 2,\n        \"description\": \"loind\",\n        \"tags\": \"d\",\n        \"location\": \"ds\",\n        \"address\": \"dd\",\n        \"city\": \"S\",\n        \"taluka\": \"D\",\n        \"village\": \"d\",\n        \"pincode\": 45646,\n        \"image\": \"sad\",\n        \"coverPic\": \"d\",\n        \"createdAt\": \"2019-02-22T17:42:14.000Z\",\n        \"updatedAt\": \"2019-02-22T17:49:38.000Z\"\n    },\n    \"message\": \"Get Profile\",\n    \"status\": \"OK\",\n    \"code\": 200\n}",
           "type": "json"
         }
       ]
