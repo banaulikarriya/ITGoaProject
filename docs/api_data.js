@@ -161,7 +161,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/getPost?token={{token}}",
-    "title": "",
+    "title": "Get Post",
     "group": "Post",
     "success": {
       "examples": [
@@ -194,7 +194,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/addPost?token={{token}}",
-    "title": "",
+    "title": "add Post",
     "group": "Post",
     "parameter": {
       "examples": [

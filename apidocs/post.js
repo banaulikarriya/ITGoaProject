@@ -1,5 +1,5 @@
 /**
- * @api {post} /addPost?token={{token}}
+ * @api {post} /addPost?token={{token}} add Post
  * @apiGroup Post
  * @apiParamExample {json} Input
  *    {
@@ -26,7 +26,7 @@
  */
 
 /**
- * @api {get} /getPost?token={{token}}
+ * @api {get} /getPost?token={{token}} Get Post
  * @apiGroup Post
  * @apiSuccessExample {json} Success-Response:
  *    HTTP/1.1 200 OK
