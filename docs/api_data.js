@@ -64,6 +64,15 @@ define({ "api": [
     "url": "/profile/1?token={{token}}",
     "title": "Edit Profile",
     "group": "Login",
+    "parameter": {
+      "examples": [
+        {
+          "title": "Input",
+          "content": "   {\n\t\"name\" :\"Priya Banaulikar\",\n\t\"email\" : \"priyab@gmail.com\",\n\t\"username\" : \"priyab\",\n\t\"description\" : \"loind\",\n\t\"contact\":\"44\",\n\t\"category\":\"2\",\n\t\"tags\":\"d\",\n\t\"location\":\"ds\",\n\t\"address\":\"dd\",\n\t\"city\":\"S\",\n\t\"taluka\":\"D\",\n\t\"pincode\" :\"45646\",\n\t\"village\":\"d\",\n\t\"image\":\"sad\",\n\t\"coverPic\":\"d\"   \n   }",
+          "type": "json"
+        }
+      ]
+    },
     "success": {
       "examples": [
         {

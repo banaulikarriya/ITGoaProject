@@ -82,6 +82,24 @@
   /**
  * @api {post} /profile/1?token={{token}} Edit Profile
  * @apiGroup Login
+ * @apiParamExample {json} Input
+*    {
+	"name" :"Priya Banaulikar",
+	"email" : "priyab@gmail.com",
+	"username" : "priyab",
+	"description" : "loind",
+	"contact":"44",
+	"category":"2",
+	"tags":"d",
+	"location":"ds",
+	"address":"dd",
+	"city":"S",
+	"taluka":"D",
+	"pincode" :"45646",
+	"village":"d",
+	"image":"sad",
+	"coverPic":"d"   
+*    }
  * @apiSuccessExample {json} Success-Response:
  *    HTTP/1.1 200 OK
  * {
