@@ -6,7 +6,7 @@ const router = express.Router();
 const userController = require('../controllers/userController');
 const authController = require('../controllers/authController');
 const postController = require('../controllers/postController');
-const fileController = require('../controllers/fileController');
+const filesController = require('../controllers/filesController');
 const auth = require('../authorization');
 
 // user routes
@@ -21,6 +21,6 @@ router.post('/addPost', auth.authorizeUser,postController.addPost);
 router.get('/getPost', auth.authorizeUser,postController.getAllPost);
 
 //file
-router.post('/uploads', auth.authorizeUser,fileController.uploadFiles);
+router.post('/uploads', auth.authorizeUser,filesController.uploadFiles);
 
 module.exports = router;
