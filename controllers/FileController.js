@@ -2,7 +2,7 @@ const async = require("async");
 const fs = require("fs");
 const mkdirp = require("mkdirp");
 
-const Files = require("../models/File");
+const Files = require("../models/file");
 
 const logError = require("debug")("error");
 
